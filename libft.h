@@ -6,7 +6,7 @@
 /*   By: kcisse <kcisse@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/18 19:45:24 by kcisse            #+#    #+#             */
-/*   Updated: 2024/05/20 15:14:54 by kcisse           ###   ########.fr       */
+/*   Updated: 2024/05/20 15:42:16 by kcisse           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,4 +28,5 @@ int		ft_tolower(int c);
 char	*ft_strchr(char *str, int searchedChar);
 char	*ft_strrchr(char *str, int searchedChar);
 int		ft_strncmp(char *first, char *second, int length);
+char	*ft_strnstr(char *big, char *little, int len);
 #endif
