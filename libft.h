@@ -6,7 +6,7 @@
 /*   By: kcisse <kcisse@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/18 19:45:24 by kcisse            #+#    #+#             */
-/*   Updated: 2024/05/20 17:37:25 by kcisse           ###   ########.fr       */
+/*   Updated: 2024/05/20 17:47:23 by kcisse           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,5 +35,6 @@ int		ft_strlcat(char *dst, char *src, int size);
 char	*ft_strdup(char *str);
 void	ft_bzero(void *s, int n);
 void	*ft_memset(void *pointer, int value, int count);
+void	*ft_memcpy(void *dst, void *src, int size);
 
 #endif
