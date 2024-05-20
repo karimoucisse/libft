@@ -6,7 +6,7 @@
 /*   By: kcisse <kcisse@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/18 19:45:24 by kcisse            #+#    #+#             */
-/*   Updated: 2024/05/20 17:06:47 by kcisse           ###   ########.fr       */
+/*   Updated: 2024/05/20 17:22:57 by kcisse           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,4 +33,6 @@ int		ft_atoi(char *str);
 int		ft_strlcpy(char *dst, char *src, int size);
 int		ft_strlcat(char *dst, char *src, int size);
 char	*ft_strdup(char *str);
+void	ft_bzero(void *s, int n);
+
 #endif
