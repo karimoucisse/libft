@@ -1,18 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kcisse <kcisse@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/18 19:41:21 by kcisse            #+#    #+#             */
-/*   Updated: 2024/05/20 15:09:06 by kcisse           ###   ########.fr       */
+/*   Created: 2024/05/20 15:08:31 by kcisse            #+#    #+#             */
+/*   Updated: 2024/05/20 15:15:07 by kcisse           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	isascii(int c)
+int	ft_strncmp(char *first, char *second, int length)
 {
-	if (c >= 0 && c <= 127)
-		return (1);
+	int	i;
+
+	i = 0;
+	while ((first[i] || second[i]) && i < length)
+	{
+		if (first[i] != second[i])
+			return (first[i] - second[i]);
+		i++;
+	}
 	return (0);
 }
