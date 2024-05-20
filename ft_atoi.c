@@ -1,42 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnstr.c                                       :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kcisse <kcisse@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/20 15:41:26 by kcisse            #+#    #+#             */
-/*   Updated: 2024/05/20 16:13:28 by kcisse           ###   ########.fr       */
+/*   Created: 2024/05/20 16:11:25 by kcisse            #+#    #+#             */
+/*   Updated: 2024/05/20 16:16:10 by kcisse           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-char	*ft_strnstr(char *big, char *little, int len)
+int	ft_atoi(char *str)
 {
 	int	i;
-	int	j;
+	int	res;
+	int	plus_sign;
+	int	minus_sign;
 
 	i = 0;
-	j = 0;
-	while (big[i] && i < len)
+	res = 0;
+	plus_sign = 0;
+	minus_sign = 0;
+	while (str[i] && ((str[i] >= 9 && str[i] <= 13) || str[i] == 127))
+		i++;
+	while (str[i] == '+' || str[i] == '-')
 	{
-		if (ft_strncmp(&big[i], &little[j], 1) == 0)
-			j++;
-		else
-			j = 0;
-		if (j == ft_strlen(little))
-		{
+		if (str[i] == '+')
+			plus_sign++;
+		if (str[i] == '-')
+			minus_sign++;
+		if ((plus_sign + minus_sign) > 1)
 			return (0);
-		}
 		i++;
 	}
-	return (0);
+	while (str[i] >= '0' && str[i] <= '9')
+	{
+		res = (res * 10) + (str[i] - '0');
+		i++;
+	}
+	return (res);
 }
-// int	main()
-// {
-// 	char *largestring = "Foo Bar Baz";
-// 	char *smallstring = "Bar";
-// 	char *ptr;
-// 	ptr = ft_strnstr(largestring, smallstring, 4);
-// }
