@@ -6,13 +6,13 @@
 /*   By: kcisse <kcisse@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/18 00:26:13 by kcisse            #+#    #+#             */
-/*   Updated: 2024/05/18 00:27:19 by kcisse           ###   ########.fr       */
+/*   Updated: 2024/05/20 18:56:03 by kcisse           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalnum(int i)
+int	ft_isalnum(char i)
 {
-	if (i >= 0 && i <= 9)
+	if (i >= '0' && i <= '9')
 		return (1);
 	return (0);
 }
