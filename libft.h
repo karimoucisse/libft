@@ -6,7 +6,7 @@
 /*   By: kcisse <kcisse@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/18 19:45:24 by kcisse            #+#    #+#             */
-/*   Updated: 2024/05/20 16:53:32 by kcisse           ###   ########.fr       */
+/*   Updated: 2024/05/20 17:06:47 by kcisse           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,5 +32,5 @@ char	*ft_strnstr(char *big, char *little, int len);
 int		ft_atoi(char *str);
 int		ft_strlcpy(char *dst, char *src, int size);
 int		ft_strlcat(char *dst, char *src, int size);
-
+char	*ft_strdup(char *str);
 #endif
