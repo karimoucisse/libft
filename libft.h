@@ -6,7 +6,7 @@
 /*   By: kcisse <kcisse@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/18 19:45:24 by kcisse            #+#    #+#             */
-/*   Updated: 2024/05/20 18:57:21 by kcisse           ###   ########.fr       */
+/*   Updated: 2024/05/21 10:57:08 by kcisse           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,14 +16,16 @@
 # include <stdio.h>
 # include <stdlib.h>
 # include <unistd.h>
+// test library => to delete
+#include <ctype.h>
 
-int		ft_isalnum(char i);
-int		ft_isalpha(char c);
-int		isascii(char c);
-int		ft_isdigit(char i);
-int		ft_isprint(char c);
+int		ft_isalnum(int i);
+int		ft_isalpha(int c);
+int		ft_isascii(int c);
+int		ft_isdigit(int i);
+int		ft_isprint(int c);
 int		ft_strlen(char *str);
-int		toupper(int c);
+int		ft_toupper(int c);
 int		ft_tolower(int c);
 char	*ft_strchr(char *str, int searchedChar);
 char	*ft_strrchr(char *str, int searchedChar);

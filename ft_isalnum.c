@@ -5,14 +5,18 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: kcisse <kcisse@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/18 00:26:13 by kcisse            #+#    #+#             */
-/*   Updated: 2024/05/20 18:56:03 by kcisse           ###   ########.fr       */
+/*   Created: 2024/05/18 00:25:56 by kcisse            #+#    #+#             */
+/*   Updated: 2024/05/21 11:34:58 by kcisse           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalnum(char i)
+#include "libft.h"
+
+int	ft_isalnum(int i)
 {
-	if (i >= '0' && i <= '9')
+	if (ft_isdigit(i))
+		return (1);
+	if (ft_isalpha(i))
 		return (1);
 	return (0);
 }

@@ -6,11 +6,11 @@
 /*   By: kcisse <kcisse@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/18 00:33:44 by kcisse            #+#    #+#             */
-/*   Updated: 2024/05/20 18:55:42 by kcisse           ###   ########.fr       */
+/*   Updated: 2024/05/21 10:45:39 by kcisse           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isprint(char c)
+int	ft_isprint(int c)
 {
 	if (c >= 21 && c <= 126)
 		return (1);

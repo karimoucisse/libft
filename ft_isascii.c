@@ -6,11 +6,11 @@
 /*   By: kcisse <kcisse@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/18 19:41:21 by kcisse            #+#    #+#             */
-/*   Updated: 2024/05/20 18:55:32 by kcisse           ###   ########.fr       */
+/*   Updated: 2024/05/21 10:46:38 by kcisse           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	isascii(char c)
+int	ft_isascii(int c)
 {
 	if (c >= 0 && c <= 127)
 		return (1);

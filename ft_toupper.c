@@ -6,11 +6,11 @@
 /*   By: kcisse <kcisse@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/18 19:52:27 by kcisse            #+#    #+#             */
-/*   Updated: 2024/05/18 19:52:28 by kcisse           ###   ########.fr       */
+/*   Updated: 2024/05/21 10:47:02 by kcisse           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	toupper(int c)
+int	ft_toupper(int c)
 {
 	return (c - 32);
 }

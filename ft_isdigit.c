@@ -5,18 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: kcisse <kcisse@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/18 00:25:56 by kcisse            #+#    #+#             */
-/*   Updated: 2024/05/20 18:56:38 by kcisse           ###   ########.fr       */
+/*   Created: 2024/05/18 00:26:13 by kcisse            #+#    #+#             */
+/*   Updated: 2024/05/21 11:35:33 by kcisse           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-int	ft_isdigit(char i)
+int	ft_isdigit(int i)
 {
-	if (ft_isalnum(i - 32))
-		return (1);
-	if (ft_isalpha(i - 32))
+	if (i >= '0' && i <= '9')
 		return (1);
 	return (0);
 }
