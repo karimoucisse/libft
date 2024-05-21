@@ -6,7 +6,7 @@
 /*   By: kcisse <kcisse@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/18 19:45:24 by kcisse            #+#    #+#             */
-/*   Updated: 2024/05/21 10:57:08 by kcisse           ###   ########.fr       */
+/*   Updated: 2024/05/21 11:50:06 by kcisse           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 # include <unistd.h>
 // test library => to delete
 #include <ctype.h>
+#include <string.h>
 
 int		ft_isalnum(int i);
 int		ft_isalpha(int c);
