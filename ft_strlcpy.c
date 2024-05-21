@@ -6,19 +6,19 @@
 /*   By: kcisse <kcisse@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/20 16:33:33 by kcisse            #+#    #+#             */
-/*   Updated: 2024/05/21 17:58:57 by kcisse           ###   ########.fr       */
+/*   Updated: 2024/05/21 19:24:41 by kcisse           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strlcpy(char *dst, const char *src, int size)
+int	ft_strlcpy(char *dst, const char *src, size_t size)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
 	if (size == 0)
-		return (0);
+		return (ft_strlen(src));
 	while (src[i] && i < (size -1))
 	{
 		dst[i] = src[i];

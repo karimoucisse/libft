@@ -27,7 +27,7 @@ int main()
 {
 	// char str[11] = "1aqlffWDD";
 	char str1[4] = "ABC";
-	char str2[4] = "ABD";
+	char str2[4] = "AB";
 	// char original[] = "The original string.";
 	// print_msg(compare_is_function(ft_isalnum, isalnum), "ft_isalnum");
 	// print_msg(compare_is_function(ft_isalpha, isalpha), "ft_isalpha");
@@ -43,6 +43,6 @@ int main()
 	// // print_msg(ft_strncmp("wfeflnv", "wfeln", 7) == strncmp("wfeflnv", "wfeln", 7), "ft_strncmp");
 	// // print_msg(ft_strnstr("Foo Bar Baz", "Bar", 3) == strnstr("Foo Bar Baz", "Bar", 3), "ft_strnstr");
 	// print_msg(ft_strdup(original) == strdup(original), "ft_strdup");
-	printf("i1 = %d\n", ft_strncmp(str1, str2, -1));
-	printf("i1 = %d\n", strncmp(str1, str2, -1));
+	// printf("i1 = %d\n", ft_strncmp(str1, str2, -1));
+	printf("i1 = %d\n", strlcpy(str1, str2, 0));
 }

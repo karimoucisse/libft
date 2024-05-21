@@ -6,7 +6,7 @@
 /*   By: kcisse <kcisse@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/18 19:45:24 by kcisse            #+#    #+#             */
-/*   Updated: 2024/05/21 17:19:27 by kcisse           ###   ########.fr       */
+/*   Updated: 2024/05/21 19:25:58 by kcisse           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,11 +30,11 @@ int		ft_toupper(int c); // OK
 int		ft_tolower(int c); // OK
 char	*ft_strchr(const char *s, int c); // NO
 char	*ft_strrchr(const char *s, int c); // NO
-int		ft_strncmp(const char *s1, const char *s2, int n); // OK
-char	*ft_strnstr(const char *big, const char *little, int len); //// NO
+int		ft_strncmp(const char *s1, const char *s2, size_t n); // OK
+char	*ft_strnstr(const char *big, const char *little, size_t len); //// NO
 int		ft_atoi(const char *str); //// NO
-int		ft_strlcpy(char *dst, const char *src, int size); //// NO
-int		ft_strlcat(char *dst, const char *src, int size); // NO
+int		ft_strlcpy(char *dst, const char *src, size_t size); // OK
+int		ft_strlcat(char *dst, const char *src, size_t size); // NO
 char	*ft_strdup(const char *str); // OK
 void	ft_bzero(void *s, int n); // OK
 void	*ft_memset(void *pointer, int value, int count); // OK
