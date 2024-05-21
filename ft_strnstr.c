@@ -6,19 +6,21 @@
 /*   By: kcisse <kcisse@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/20 15:41:26 by kcisse            #+#    #+#             */
-/*   Updated: 2024/05/20 16:13:28 by kcisse           ###   ########.fr       */
+/*   Updated: 2024/05/21 13:34:41 by kcisse           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strnstr(char *big, char *little, int len)
+char	*ft_strnstr(const char *big, const char *little, int len)
 {
 	int	i;
 	int	j;
 
 	i = 0;
 	j = 0;
+	if (ft_strlen(little) == 0)
+		return ((char *)big);
 	while (big[i] && i < len)
 	{
 		if (ft_strncmp(&big[i], &little[j], 1) == 0)
@@ -26,9 +28,7 @@ char	*ft_strnstr(char *big, char *little, int len)
 		else
 			j = 0;
 		if (j == ft_strlen(little))
-		{
-			return (0);
-		}
+			return (char *)(&(big[i - (j - 1)]));
 		i++;
 	}
 	return (0);

@@ -6,13 +6,13 @@
 /*   By: kcisse <kcisse@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/20 16:33:33 by kcisse            #+#    #+#             */
-/*   Updated: 2024/05/20 16:50:37 by kcisse           ###   ########.fr       */
+/*   Updated: 2024/05/21 13:19:19 by kcisse           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strlcpy(char *dst, char *src, int size)
+int	ft_strlcpy(char *dst, const char *src, int size)
 {
 	int	i;
 

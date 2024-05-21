@@ -6,19 +6,19 @@
 /*   By: kcisse <kcisse@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/20 15:08:31 by kcisse            #+#    #+#             */
-/*   Updated: 2024/05/20 15:15:07 by kcisse           ###   ########.fr       */
+/*   Updated: 2024/05/21 13:14:33 by kcisse           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strncmp(char *first, char *second, int length)
+int	ft_strncmp(const char *s1, const char *s2, int n)
 {
 	int	i;
 
 	i = 0;
-	while ((first[i] || second[i]) && i < length)
+	while ((s1[i] || s2[i]) && i < n)
 	{
-		if (first[i] != second[i])
-			return (first[i] - second[i]);
+		if (s1[i] != s2[i])
+			return (s1[i] - s2[i]);
 		i++;
 	}
 	return (0);

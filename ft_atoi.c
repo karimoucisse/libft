@@ -6,11 +6,11 @@
 /*   By: kcisse <kcisse@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/20 16:11:25 by kcisse            #+#    #+#             */
-/*   Updated: 2024/05/20 16:35:48 by kcisse           ###   ########.fr       */
+/*   Updated: 2024/05/21 13:17:38 by kcisse           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_atoi(char *str)
+int	ft_atoi(const char *str)
 {
 	int	i;
 	int	res;
