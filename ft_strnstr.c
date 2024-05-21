@@ -6,7 +6,7 @@
 /*   By: kcisse <kcisse@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/20 15:41:26 by kcisse            #+#    #+#             */
-/*   Updated: 2024/05/21 13:34:41 by kcisse           ###   ########.fr       */
+/*   Updated: 2024/05/21 17:32:19 by kcisse           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,10 +33,4 @@ char	*ft_strnstr(const char *big, const char *little, int len)
 	}
 	return (0);
 }
-// int	main()
-// {
-// 	char *largestring = "Foo Bar Baz";
-// 	char *smallstring = "Bar";
-// 	char *ptr;
-// 	ptr = ft_strnstr(largestring, smallstring, 4);
-// }
+

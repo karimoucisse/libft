@@ -6,7 +6,7 @@
 /*   By: kcisse <kcisse@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/20 17:49:40 by kcisse            #+#    #+#             */
-/*   Updated: 2024/05/21 13:20:50 by kcisse           ###   ########.fr       */
+/*   Updated: 2024/05/21 15:31:40 by kcisse           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@ void	*ft_memcpy(void *dst, const void *src, int size)
 	int	i;
 
 	i = 0;
-	size = size / sizeof(int);
 	while (i < size)
 	{
 		((char *)dst)[i] = ((char *)src)[i];

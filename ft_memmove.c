@@ -6,11 +6,19 @@
 /*   By: kcisse <kcisse@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 10:47:51 by kcisse            #+#    #+#             */
-/*   Updated: 2024/05/21 10:47:52 by kcisse           ###   ########.fr       */
+/*   Updated: 2024/05/21 15:04:41 by kcisse           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*memmove(void *str1, void *str2, int n)
+void	*ft_memmove(void *dst, const void *src, int n)
 {
+	int	i;
 
+	i = 0;
+	while(i < n)
+	{
+		((char *)dst)[i] = ((char *)src)[i];
+		i++;
+	}
+	return (dst);
 }
