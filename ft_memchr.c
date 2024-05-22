@@ -6,18 +6,19 @@
 /*   By: kcisse <kcisse@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/20 18:35:09 by kcisse            #+#    #+#             */
-/*   Updated: 2024/05/21 15:34:35 by kcisse           ###   ########.fr       */
+/*   Updated: 2024/05/22 12:13:07 by kcisse           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*ft_memchr(void *s, int c, int size)
+#include "libft.h"
+void	*ft_memchr(const void *s, int c, unsigned int size)
 {
-	int	i;
+	unsigned int	i;
 
 	i = 0;
 	while (i < size)
 	{
-		if (((char *)s)[i] == c)
+		if (((unsigned char *)s)[i] == (unsigned char)c)
 			return (&((char *)s)[i]);
 		i++;
 	}

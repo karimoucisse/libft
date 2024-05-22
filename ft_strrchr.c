@@ -6,7 +6,7 @@
 /*   By: kcisse <kcisse@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/20 14:27:13 by kcisse            #+#    #+#             */
-/*   Updated: 2024/05/21 16:22:27 by kcisse           ###   ########.fr       */
+/*   Updated: 2024/05/22 13:10:38 by kcisse           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strrchr(const char *s, int c)
 	len = ft_strlen(s);
 	while (len >= 0)
 	{
-		if (s[len] == c)
+		if ((char)s[len] == (char)c)
 			return ((char *)&s[len]);
 		len--;
 	}
