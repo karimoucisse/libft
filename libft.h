@@ -6,7 +6,7 @@
 /*   By: kcisse <kcisse@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/18 19:45:24 by kcisse            #+#    #+#             */
-/*   Updated: 2024/05/23 13:42:15 by kcisse           ###   ########.fr       */
+/*   Updated: 2024/05/23 17:15:38 by kcisse           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,5 +47,7 @@ void 	ft_putstr_fd(char *s, int fd);
 void	ft_putchar_fd(char c, int fd);
 void	ft_putendl_fd(char *s, int fd);
 char 	*ft_substr(char const *s, unsigned int start, size_t len); // NO
-
+char	*ft_strjoin(char const *s1, char const *s2);
+char 	*ft_strtrim(char const *s1, char const *set);
+char 	**ft_split(char const *s, char c);
 #endif
