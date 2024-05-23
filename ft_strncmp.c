@@ -6,11 +6,12 @@
 /*   By: kcisse <kcisse@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/20 15:08:31 by kcisse            #+#    #+#             */
-/*   Updated: 2024/05/22 17:44:35 by kcisse           ###   ########.fr       */
+/*   Updated: 2024/05/23 17:30:45 by kcisse           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	size_t	i;

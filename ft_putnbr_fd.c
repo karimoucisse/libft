@@ -1,7 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: kcisse <kcisse@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/05/23 17:27:49 by kcisse            #+#    #+#             */
+/*   Updated: 2024/05/23 17:28:23 by kcisse           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_putnbr_fd(int n, int fd)
+void	ft_putnbr_fd(int n, int fd)
 {
 	if (n == 2147483647)
 		write(fd, "2147483647", 10);
@@ -12,7 +23,6 @@ void ft_putnbr_fd(int n, int fd)
 			write(fd, "-", 1);
 			n = -n;
 		}
-
 		if (n > 9)
 		{
 			ft_putnbr_fd((n / 10), fd);
@@ -22,4 +32,3 @@ void ft_putnbr_fd(int n, int fd)
 			ft_putchar_fd(n + '0', fd);
 	}
 }
-

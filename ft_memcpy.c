@@ -6,11 +6,12 @@
 /*   By: kcisse <kcisse@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/20 17:49:40 by kcisse            #+#    #+#             */
-/*   Updated: 2024/05/23 13:25:51 by kcisse           ###   ########.fr       */
+/*   Updated: 2024/05/23 17:25:07 by kcisse           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
 void	*ft_memcpy(void *dst, const void *src, int size)
 {
 	int	i;
@@ -23,12 +24,4 @@ void	*ft_memcpy(void *dst, const void *src, int size)
 	}
 	return (dst);
 }
-
-// int main()
-// {
-// 	char buffer[5] = "ARTE";
-// 	ft_memcpy(buffer + 2, buffer, 2);
-// 	printf("buffer = %s", buffer);
-// 	return 0;
-// }
 

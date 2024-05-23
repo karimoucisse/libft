@@ -22,9 +22,3 @@ char *ft_substr(char const *s, unsigned int start, size_t len)
 	sub_str[i] = '\0';
 	return (sub_str);
 }
-
-// int main()
-// {
-// 	const char str[11] = "tripouille";
-// 	printf("s = %s", ft_substr(str, 100, 1));
-// }

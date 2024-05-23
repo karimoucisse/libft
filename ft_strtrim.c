@@ -6,7 +6,7 @@
 /*   By: kcisse <kcisse@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/23 16:06:17 by kcisse            #+#    #+#             */
-/*   Updated: 2024/05/23 16:59:48 by kcisse           ###   ########.fr       */
+/*   Updated: 2024/05/23 17:32:49 by kcisse           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@ int	calc_len(const char *s1, const char *set)
 	}
 	return (len);
 }
+
 void	trim_str_ft(const char *s1, const char *set, char *copy)
 {
 	int	i;
@@ -36,9 +37,9 @@ void	trim_str_ft(const char *s1, const char *set, char *copy)
 	i = 0;
 	len = 0;
 	j = 0;
-	while(s1[i])
+	while (s1[i])
 	{
-		if(!ft_strchr(set, s1[i]))
+		if (!ft_strchr(set, s1[i]))
 		{
 			copy[j] = s1[i];
 			j++;
@@ -46,6 +47,7 @@ void	trim_str_ft(const char *s1, const char *set, char *copy)
 		i++;
 	}
 }
+
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	int		len;
@@ -59,4 +61,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	trimed_str[len] = '\0';
 	return (trimed_str);
 }
-

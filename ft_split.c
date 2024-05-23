@@ -6,7 +6,7 @@
 /*   By: kcisse <kcisse@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/23 17:14:51 by kcisse            #+#    #+#             */
-/*   Updated: 2024/05/23 17:20:49 by kcisse           ###   ########.fr       */
+/*   Updated: 2024/05/23 17:29:14 by kcisse           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,13 +16,13 @@
 int	nbr_spliter(char const *s, char c)
 {
 	int	i;
-	int len;
+	int	len;
 
 	i = 0;
 	len = 0;
-	while(s[i])
+	while (s[i])
 	{
-		if(s[i] == c)
+		if (s[i] == c)
 			len++;
 		i++;
 	}
