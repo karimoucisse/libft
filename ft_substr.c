@@ -1,18 +1,21 @@
 
 #include "libft.h"
 
+// ("tripouille", 100, 1)
 char *ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*sub_str;
 	size_t		i;
+	// int malloc_len;
 
-	sub_str = malloc(sizeof(char) * len + 1);
+	i = 0;
+	s = s + start;
+	sub_str = malloc(sizeof(char) * len);
 	if(sub_str == NULL)
 		return (0);
-	i = 0;
-	while (s[start] && (i < len))
+	while (*s && (i != len))
 	{
-		sub_str[i] = s[start];
+		sub_str[i] = *s++;
 		start++;
 		i++;
 	}
