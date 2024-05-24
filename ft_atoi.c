@@ -6,7 +6,7 @@
 /*   By: kcisse <kcisse@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/20 16:11:25 by kcisse            #+#    #+#             */
-/*   Updated: 2024/05/22 16:29:47 by kcisse           ###   ########.fr       */
+/*   Updated: 2024/05/24 21:14:09 by kcisse           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ int	ft_atoi(const char *str)
 	res = 0;
 	plus_sign = 0;
 	minus_sign = 0;
-	while (str[i] && ((str[i] >= 9 && str[i] <= 13) || str[i] == 127))
+	while (str[i] && ((str[i] >= 9 && str[i] <= 13) || str[i] == 32))
 		i++;
 	while (str[i] == '+' || str[i] == '-')
 	{

@@ -6,7 +6,7 @@
 /*   By: kcisse <kcisse@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/23 16:06:17 by kcisse            #+#    #+#             */
-/*   Updated: 2024/05/23 17:32:49 by kcisse           ###   ########.fr       */
+/*   Updated: 2024/05/24 21:02:28 by kcisse           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,11 +31,9 @@ int	calc_len(const char *s1, const char *set)
 void	trim_str_ft(const char *s1, const char *set, char *copy)
 {
 	int	i;
-	int	len;
 	int	j;
 
 	i = 0;
-	len = 0;
 	j = 0;
 	while (s1[i])
 	{
