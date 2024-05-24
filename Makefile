@@ -2,7 +2,7 @@ NAME = libft.a
 RM = rm -f
 CC = cc
 CFLAGS = -Wall -Werror -Wextra
-CFILES_SUP = ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c \
+CFILES_SUP = ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c \ 
 	ft_putendl_fd.c ft_putchar_fd.c ft_putstr_fd.c ft_putnbr_fd.c
 CFILES = ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c ft_isprint.c \
 	ft_strlen.c  ft_tolower.c ft_toupper.c ft_strchr.c ft_strrchr.c \

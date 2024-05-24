@@ -6,45 +6,91 @@
 /*   By: kcisse <kcisse@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/23 17:14:51 by kcisse            #+#    #+#             */
-/*   Updated: 2024/05/23 17:29:14 by kcisse           ###   ########.fr       */
+/*   Updated: 2024/05/24 20:39:22 by kcisse           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
 #include "libft.h"
 
-int	nbr_spliter(char const *s, char c)
+int	count_chars(char const *s, char c)
 {
-	int	i;
+	int	b;
 	int	len;
 
-	i = 0;
+	b = 0;
 	len = 0;
-	while (s[i])
+	while (*s)
 	{
-		if (s[i] == c)
-			len++;
-		i++;
+		b = 0;
+		while (*s == c && *s)
+			s++;
+		while ((*s != c ) && *s)
+		{
+			if(b == 0)
+			{
+				b = 1;
+				len++;
+			}
+			s++;
+		}
 	}
 	return (len);
 }
-
-void ft_split_char(char const *s, char c, char **splited_char)
+int malloc_char_tab(char **chars_tab, int i, int len)
 {
+	int	j;
 
+	j = 0;
+	chars_tab[i] = malloc(sizeof(char) * (len + 1));
+	if(chars_tab[i] == NULL)
+	{
+		while(j <= i)
+		{
+			free(chars_tab[j]);
+			j++;
+		}
+		free(chars_tab);
+		return (0);
+	}
+	return (1);
+}
+int	tab_filler(const char *s, char c, char **chars_tab)
+{
+	int	len;
+	int	i;
+
+	i = 0;
+	while (*s)
+	{
+		len = 0;
+		while (*s == c && *s)
+			s++;
+		while (*s != c && *s)
+		{
+			len++;
+			s++;
+		}
+		if(!malloc_char_tab(chars_tab, i, len))
+			return (0);
+		ft_strlcpy(chars_tab[i], s - len, len +1);
+		i++;
+	}
+	chars_tab[i] = '\0';
+	return (1);
 }
 
-char **ft_split(char const *s, char c)
+char	**ft_split(char const *s, char c)
 {
 	int		len;
-	char	**splited_char;
+	char	**chars_tab;
 
-	len = nbr_spliter(s, c);
-	splited_char = malloc(sizeof(char *) * (len + 1));
-	printf("i = %d", len);
-	return (char *)s;
+	len = count_chars(s, c);
+	chars_tab = malloc(sizeof(char *) * (len + 1));
+	if (chars_tab == NULL)
+		return (0);
+	if (!tab_filler(s, c, chars_tab))
+		return (0);
+	return (chars_tab);
 }
-int main()
-{
-	ft_split("qwe_reger__rtg_g", '_');
-}
+
