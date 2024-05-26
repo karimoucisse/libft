@@ -6,7 +6,7 @@
 /*   By: kcisse <kcisse@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/18 19:45:24 by kcisse            #+#    #+#             */
-/*   Updated: 2024/05/26 17:51:05 by kcisse           ###   ########.fr       */
+/*   Updated: 2024/05/26 18:56:57 by kcisse           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,6 +48,8 @@ void	*ft_memchr(const void *s, int c, size_t n);
 int		ft_memcmp(const void *p1, const void *p2, int size);
 void	*ft_memmove(void *dst, const void *src, size_t n);
 void	*ft_calloc(size_t nmemb, size_t size);
+
+// FUNC SUPP
 void	ft_putnbr_fd(int n, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putchar_fd(char c, int fd);
@@ -60,4 +62,7 @@ char	*ft_itoa(int n);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 // ft_strnstr, ft_substr, strtrim, memcpy, strncmp, itoa, memmove
+
+// BONUS
+t_list	*ft_lstnew(void *content);
 #endif
