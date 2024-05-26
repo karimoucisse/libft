@@ -6,7 +6,7 @@
 /*   By: kcisse <kcisse@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/23 17:14:51 by kcisse            #+#    #+#             */
-/*   Updated: 2024/05/24 22:14:04 by kcisse           ###   ########.fr       */
+/*   Updated: 2024/05/26 11:13:07 by kcisse           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,13 +72,13 @@ int	tab_filler(const char *s, char c, char **chars_tab)
 			len++;
 			s++;
 		}
-		if (len)
+		if (len > 0)
 		{
 			if (!malloc_char_tab(chars_tab, i, len))
 				return (0);
 			ft_strlcpy(chars_tab[i], s - len, len +1);
+			i++;
 		}
-		i++;
 	}
 	chars_tab[i] = 0;
 	return (1);

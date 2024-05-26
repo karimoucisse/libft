@@ -6,7 +6,7 @@
 /*   By: kcisse <kcisse@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/24 20:55:24 by kcisse            #+#    #+#             */
-/*   Updated: 2024/05/24 21:21:38 by kcisse           ###   ########.fr       */
+/*   Updated: 2024/05/26 12:04:36 by kcisse           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	size_t	i;
 
 	i = 0;
-	if ((int)len > ft_strlen(&s[start]))
+	if (len > ft_strlen(&s[start]))
 		len = ft_strlen(&s[start]);
 	sub_str = malloc(sizeof(char) + len);
 	if (sub_str == NULL)

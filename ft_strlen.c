@@ -6,11 +6,13 @@
 /*   By: kcisse <kcisse@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/18 00:37:02 by kcisse            #+#    #+#             */
-/*   Updated: 2024/05/21 13:31:31 by kcisse           ###   ########.fr       */
+/*   Updated: 2024/05/26 11:54:07 by kcisse           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(const char *str)
+#include "libft.h"
+
+size_t	ft_strlen(const char *str)
 {
 	int	l;
 

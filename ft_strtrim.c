@@ -6,7 +6,7 @@
 /*   By: kcisse <kcisse@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/23 16:06:17 by kcisse            #+#    #+#             */
-/*   Updated: 2024/05/24 21:02:28 by kcisse           ###   ########.fr       */
+/*   Updated: 2024/05/26 11:32:17 by kcisse           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,7 @@ void	trim_str_ft(const char *s1, const char *set, char *copy)
 	}
 }
 
+// ft_strtrim(" . abcd", " "): expected: ". abcd", got: ".abcd"
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	int		len;

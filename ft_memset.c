@@ -6,18 +6,18 @@
 /*   By: kcisse <kcisse@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/20 17:32:54 by kcisse            #+#    #+#             */
-/*   Updated: 2024/05/20 17:46:40 by kcisse           ###   ########.fr       */
+/*   Updated: 2024/05/26 11:51:26 by kcisse           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*ft_memset(void *pointer, int value, int count)
-{
-	int	size;
-	int	i;
+#include "libft.h"
 
-	size = count / sizeof(char);
+void	*ft_memset(void *pointer, int value, size_t count)
+{
+	size_t	i;
+
 	i = 0;
-	while (i < size)
+	while (i < count)
 	{
 		((char *)pointer)[i] = value;
 		i++;
