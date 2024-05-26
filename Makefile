@@ -2,7 +2,7 @@ NAME = libft.a
 RM = rm -f
 CC = cc
 CFLAGS = -Wall -Werror -Wextra
-BONUS_CFILES = ft_lstnew_bonus.c
+# BONUS_CFILES = ft_lstnew_bonus.c
 SUP_CFILES = ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c\
 	ft_putendl_fd.c ft_putchar_fd.c ft_putstr_fd.c ft_putnbr_fd.c\
 	ft_strmapi.c ft_striteri.c
@@ -12,12 +12,12 @@ CFILES = ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c ft_isprint.c \
 	ft_strdup.c ft_bzero.c ft_memset.c ft_memcpy.c ft_memchr.c ft_memcmp.c \
 	ft_memmove.c ft_calloc.c $(SUP_CFILES)
 OFILES = $(CFILES:.c=.o)
-BONUS_OFILES = $(BONUS_CFILES:_bonus.c=.o)
+# BONUS_OFILES = $(BONUS_CFILES:_bonus.c=.o)
 
-bonus: $(BONUS_OFILES)
-	ar rcs bonus $(BONUS_OFILES)
-%.o:%_bonus.c
-	$(CC) $(CFLAGS) -c $< -o $@
+# bonus: $(BONUS_OFILES)
+# 	ar rcs bonus $(BONUS_OFILES)
+# %.o:%_bonus.c
+# 	$(CC) $(CFLAGS) -c $< -o $@
 $(NAME): $(OFILES)
 	ar rcs $(NAME) $(OFILES)
 %.o:%.c
@@ -25,9 +25,9 @@ $(NAME): $(OFILES)
 all: $(NAME)
 clean:
 	$(RM) $(OFILES)
-	$(RM) $(BONUS_CFILES)
+# $(RM) $(BONUS_OFILES)
 fclean: clean
 	$(RM) $(NAME)
-	$(RM) bonus
+# $(RM) bonus
 re: fclean all
 .PHONY: all clean fclean re
