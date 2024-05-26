@@ -6,7 +6,7 @@
 /*   By: kcisse <kcisse@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/18 19:45:24 by kcisse            #+#    #+#             */
-/*   Updated: 2024/05/26 15:55:54 by kcisse           ###   ########.fr       */
+/*   Updated: 2024/05/26 17:21:59 by kcisse           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,5 +51,6 @@ char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s1, char const *set); // *
 char	**ft_split(char const *s, char c);
 char	*ft_itoa(int n);
-//memcpy, strtrim, strncmp, ft_substr
+char *ft_strmapi(char const *s, char (*f)(unsigned int, char));
+// Failed tests: memmove, strncmp, ft_strnstr, itoa, memcpy, ft_substr, strtrim
 #endif
