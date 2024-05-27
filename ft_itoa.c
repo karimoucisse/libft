@@ -6,7 +6,7 @@
 /*   By: kcisse <kcisse@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/26 15:07:46 by kcisse            #+#    #+#             */
-/*   Updated: 2024/05/26 17:14:52 by kcisse           ###   ########.fr       */
+/*   Updated: 2024/05/27 20:04:24 by kcisse           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,7 +75,7 @@ char	*ft_itoa(int n)
 		if (copy == -2147483648)
 			copy = 2147483648;
 		else
-		copy = -copy;
+			copy = -copy;
 	}
 	if (!fill_tab(len, copy, sign))
 		return (0);

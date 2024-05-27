@@ -6,7 +6,7 @@
 /*   By: kcisse <kcisse@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/27 11:39:28 by kcisse            #+#    #+#             */
-/*   Updated: 2024/05/27 19:36:49 by kcisse           ###   ########.fr       */
+/*   Updated: 2024/05/27 20:08:55 by kcisse           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 t_list	*ft_lstnew(void *content)
 {
 	t_list	*first_list;
+
 	first_list = malloc(sizeof(t_list));
 	if (first_list == NULL)
 		return (0);
