@@ -2,7 +2,8 @@ NAME = libft.a
 RM = rm -f
 CC = cc
 CFLAGS = -Wall -Werror -Wextra
-BONUS_CFILES = ft_lstnew_bonus.c
+BONUS_CFILES = ft_lstnew_bonus.c ft_lstadd_front_bonus.c ft_lstsize_bonus.c\
+ft_lstlast_bonus.c ft_lstadd_back_bonus.c ft_lstdelone_bonus.c
 SUP_CFILES = ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c\
 	ft_putendl_fd.c ft_putchar_fd.c ft_putstr_fd.c ft_putnbr_fd.c\
 	ft_strmapi.c ft_striteri.c
