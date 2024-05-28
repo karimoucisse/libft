@@ -13,8 +13,8 @@ CFILES = ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c ft_isprint.c \
 	ft_strncmp.c ft_strnstr.c ft_atoi.c ft_strlcpy.c ft_strlcat.c \
 	ft_strdup.c ft_bzero.c ft_memset.c ft_memcpy.c ft_memchr.c ft_memcmp.c \
 	ft_memmove.c ft_calloc.c $(SUP_CFILES)
-ALL_CFILES = $(BONUS_CFILES) $(CFILES)
 OFILES = $(CFILES:.c=.o)
+ALL_CFILES = $(BONUS_CFILES) $(CFILES)
 ALL_OFILES = $(ALL_CFILES:.c=.o)
 
 
@@ -26,8 +26,8 @@ $(NAME): $(OFILES)
 bonus: $(ALL_OFILES)
 	ar rcs $(NAME) $(ALL_OFILES)
 clean:
-	$(RM) $(OFILES) $(BONUS_OFILES)
+	$(RM) $(OFILES) $(ALL_OFILES)
 fclean: clean
-	$(RM) $(NAME) bonus
+	$(RM) $(NAME)
 re: fclean all
 .PHONY: all clean fclean re
