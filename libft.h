@@ -6,7 +6,7 @@
 /*   By: kcisse <kcisse@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/18 19:45:24 by kcisse            #+#    #+#             */
-/*   Updated: 2024/05/28 13:14:24 by kcisse           ###   ########.fr       */
+/*   Updated: 2024/05/28 17:15:24 by kcisse           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,7 +73,6 @@ void	ft_lstclear(t_list **lst, void (*del)(void*));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 
-// strncmp, substr, strtrim, libftTester, memcpy,
-// memmove, fsoares, lstadd_back, lstmap
+// itoa, ft_lstadd_back, substr, strncmp, ft_strnstr, ft_lstmap
 
 #endif

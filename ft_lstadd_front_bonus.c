@@ -6,7 +6,7 @@
 /*   By: kcisse <kcisse@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/27 11:42:18 by kcisse            #+#    #+#             */
-/*   Updated: 2024/05/28 10:49:09 by kcisse           ###   ########.fr       */
+/*   Updated: 2024/05/28 17:20:12 by kcisse           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,7 @@
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	if (new)
-	{
+
 		new->next = *lst;
 		*lst = new;
-	}
 }

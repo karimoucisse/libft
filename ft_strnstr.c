@@ -6,7 +6,7 @@
 /*   By: kcisse <kcisse@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/20 15:41:26 by kcisse            #+#    #+#             */
-/*   Updated: 2024/05/26 17:13:42 by kcisse           ###   ########.fr       */
+/*   Updated: 2024/05/28 17:11:14 by kcisse           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 
 	j = 0;
 	i = 0;
+	printf("len = %zu\n", len);
 	if (ft_strlen(little) == 0)
 		return ((char *)big);
 	while (big[i] && (i < (size_t)len))
@@ -32,4 +33,10 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 		i++;
 	}
 	return (0);
+}
+int main()
+{
+	char haystack[30] = "aaabcabcd";
+	char needle[10] = "aabc";
+	printf("s= %s", ft_strnstr(haystack, needle, 10));
 }
