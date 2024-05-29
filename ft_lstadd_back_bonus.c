@@ -6,7 +6,7 @@
 /*   By: kcisse <kcisse@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/27 14:40:54 by kcisse            #+#    #+#             */
-/*   Updated: 2024/05/29 16:44:08 by kcisse           ###   ########.fr       */
+/*   Updated: 2024/05/29 18:56:39 by kcisse           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 
 	p = *lst;
 	if (!lst)
-		return;
+		return ;
 	if (!*lst)
 		*lst = new;
 	else
@@ -28,4 +28,3 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 		p->next = new;
 	}
 }
-
