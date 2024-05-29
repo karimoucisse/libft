@@ -6,7 +6,7 @@
 /*   By: kcisse <kcisse@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/26 15:07:46 by kcisse            #+#    #+#             */
-/*   Updated: 2024/05/27 20:04:24 by kcisse           ###   ########.fr       */
+/*   Updated: 2024/05/29 17:34:09 by kcisse           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,17 +43,19 @@ int	int_len(int n, int *s)
 char	*fill_tab(int len, long num, int sign)
 {
 	char	*str;
+	int		len_cpy;
 
 	str = malloc(sizeof(char) * (len + 1));
+	len_cpy = len;
 	if (str == NULL)
 		return (0);
-	str[len] = '\0';
 	while ((len - 1) >= sign)
 	{
 		str[len -1] = (num % 10) + '0';
 		num /= 10;
 		len--;
 	}
+	str[len_cpy] = '\0';
 	if (sign)
 		str[0] = '-';
 	return (str);
