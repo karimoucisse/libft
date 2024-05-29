@@ -6,7 +6,7 @@
 /*   By: kcisse <kcisse@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/20 15:41:26 by kcisse            #+#    #+#             */
-/*   Updated: 2024/05/28 17:11:14 by kcisse           ###   ########.fr       */
+/*   Updated: 2024/05/29 16:43:16 by kcisse           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,9 +34,9 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (0);
 }
-int main()
-{
-	char haystack[30] = "aaabcabcd";
-	char needle[10] = "aabc";
-	printf("s= %s", ft_strnstr(haystack, needle, 10));
-}
+// int main()
+// {
+// 	char haystack[30] = "aaabcabcd";
+// 	char needle[10] = "aabc";
+// 	printf("s= %s", ft_strnstr(haystack, needle, 10));
+// }

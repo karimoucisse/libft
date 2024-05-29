@@ -6,7 +6,7 @@
 /*   By: kcisse <kcisse@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/27 20:07:15 by kcisse            #+#    #+#             */
-/*   Updated: 2024/05/27 20:07:16 by kcisse           ###   ########.fr       */
+/*   Updated: 2024/05/29 17:15:27 by kcisse           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,22 @@
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	t_list	*new_list;
+	t_list	*new_lst;
+	t_list	*lst_copy;
 
-	new_list = malloc(sizeof(t_list));
-	if (!new_list || !ft_lstnew(lst->content))
+	if(!lst)
 		return (0);
-	lst = lst->next;
-	while (lst)
+	while(lst)
 	{
-		(*f)(lst->content);
-		(*del)(lst->content);
+		if(ft_lstnew((*f)(lst->content)))
+			lst_copy = ft_lstnew((*f)(lst->content));
+		else
+		{
+			(*del)(lst_copy->content);
+			free(lst_copy);
+		}
+		ft_lstadd_back(&new_lst, lst_copy);
 		lst = lst->next;
 	}
-	return (lst);
+	return (new_lst);
 }
