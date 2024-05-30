@@ -6,7 +6,7 @@
 /*   By: kcisse <kcisse@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/20 17:49:40 by kcisse            #+#    #+#             */
-/*   Updated: 2024/05/30 14:39:40 by kcisse           ###   ########.fr       */
+/*   Updated: 2024/05/30 14:59:26 by kcisse           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 
 // copies  n  bytes from memory area src to memory area dest.
 // The memory areas must not overlap.
+// don't add the character '\0' in the end.
 void	*ft_memcpy(void *dst, const void *src, size_t size)
 {
 	size_t	i;
