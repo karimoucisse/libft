@@ -17,12 +17,11 @@ OFILES = $(CFILES:.c=.o)
 ALL_CFILES = $(BONUS_CFILES) $(CFILES)
 ALL_OFILES = $(ALL_CFILES:.c=.o)
 
-
 all: $(NAME)
-%.o:%.c
-	$(CC) $(CFLAGS) -c $< -o $@
 $(NAME): $(OFILES)
 	ar rcs $@ $<
+%.o:%.c
+	$(CC) $(CFLAGS) -c $< -o $@
 bonus: $(ALL_OFILES)
 	ar rcs $(NAME) $(ALL_OFILES)
 clean:
