@@ -6,10 +6,11 @@
 /*   By: kcisse <kcisse@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/18 00:12:23 by kcisse            #+#    #+#             */
-/*   Updated: 2024/05/21 10:45:25 by kcisse           ###   ########.fr       */
+/*   Updated: 2024/05/30 14:35:14 by kcisse           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+// checks for an alphabetic character
 int	ft_isalpha(int c)
 {
 	if (c >= 'a' && c <= 'z')

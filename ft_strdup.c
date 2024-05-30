@@ -6,12 +6,13 @@
 /*   By: kcisse <kcisse@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/20 16:57:39 by kcisse            #+#    #+#             */
-/*   Updated: 2024/05/21 13:29:56 by kcisse           ###   ########.fr       */
+/*   Updated: 2024/05/30 14:47:07 by kcisse           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// duplicate a string
 char	*ft_strdup(const char *str)
 {
 	int		i;

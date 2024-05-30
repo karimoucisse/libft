@@ -6,7 +6,7 @@
 /*   By: kcisse <kcisse@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/20 16:11:25 by kcisse            #+#    #+#             */
-/*   Updated: 2024/05/24 21:14:09 by kcisse           ###   ########.fr       */
+/*   Updated: 2024/05/30 14:41:04 by kcisse           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ int	get_res(const char *str)
 	return (res);
 }
 
+// transform char to int
 int	ft_atoi(const char *str)
 {
 	int	i;

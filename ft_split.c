@@ -6,12 +6,13 @@
 /*   By: kcisse <kcisse@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/23 17:14:51 by kcisse            #+#    #+#             */
-/*   Updated: 2024/05/26 11:13:07 by kcisse           ###   ########.fr       */
+/*   Updated: 2024/05/30 14:46:18 by kcisse           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// count the number of string that are going to be split
 int	count_chars(char const *s, char c)
 {
 	int	b;
@@ -56,6 +57,8 @@ int	malloc_char_tab(char **chars_tab, int i, int len)
 	return (1);
 }
 
+// fill the table chars_tab with the string
+// that are goin to be split
 int	tab_filler(const char *s, char c, char **chars_tab)
 {
 	int	len;
@@ -84,6 +87,7 @@ int	tab_filler(const char *s, char c, char **chars_tab)
 	return (1);
 }
 
+// split a string "s" by the value "c";
 char	**ft_split(char const *s, char c)
 {
 	int		len;

@@ -6,7 +6,7 @@
 /*   By: kcisse <kcisse@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/26 15:07:46 by kcisse            #+#    #+#             */
-/*   Updated: 2024/05/29 18:47:00 by kcisse           ###   ########.fr       */
+/*   Updated: 2024/05/30 14:40:48 by kcisse           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,6 +61,7 @@ char	*fill_tab(int len, long num, int sign)
 	return (str);
 }
 
+// transform int to char *
 char	*ft_itoa(int n)
 {
 	int		sign;
